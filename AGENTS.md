@@ -1,0 +1,3 @@
+- Restaurant site: all business data (name, hours, phone, dishes, menu) lives in `src/lib/site.ts`; media URLs come from `src/lib/media.ts`. Why: rename/retime without touching components.
+- Raw Flow renders are processed by `scripts/process.sh` (delogo, keyframe-every-2 hero clips). Why: hero is scrubbed by scroll and needs instant seeks.
+- Scroll motion uses GSAP ScrollTrigger + Lenis via `src/lib/motion.ts`; hero clips are blob-loaded. Why: local seeks, no black frames.
