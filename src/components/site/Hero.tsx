@@ -100,7 +100,7 @@ export function Hero({ onFirstReady }: { onFirstReady: () => void }) {
         gsap.set(bar, { scaleX: p });
       };
 
-      const band = () => (window.innerWidth < 900 ? 0.9 : 1.05) * window.innerHeight;
+      const band = () => (window.innerWidth < 900 ? 0.35 : 1.05) * window.innerHeight;
       const st = ScrollTrigger.create({
         trigger: el,
         start: "top top",
